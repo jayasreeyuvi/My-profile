@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+}
+.navbar ul
+{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li
+{
+    font-family: century;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+    display: flex;
+    text-align: center;
+    font-style: italic;
+}
+.navbar ul li a:hover
+{
+    background-color: lightcoral;
+    color: white;
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+}
+
+/* Home Section*/
+
+#Home
+{
+    display: flex;
+    flex-direction: column; 
+    background-color:black;
+    height: 840px;
+    justify-content: center;
+    align-items: center ;
+    color: lavenderblush;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
+    background-image: url("../Assets/image/image-1.png");
+    
+    
+}
+
+#Home::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main
+{
+    display: flex;
+    flex-direction:column;
+    /* border: 1px solid white */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+   
+}
+.headings
+{
+    font-family: century;
+    font-size: 2.7rem;
+    text-align: center;
+    margin: 40px 0px;
+    font-style: italic;
+
+}
+span
+{
+    color:dimgray
+}
+span:hover
+{
+    color: lightcoral;
+}
+/* About Section*/
+#About 
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: black;
+    align-items: justify;
+
+}
+
+#About h2
+{
+    font-style: italic;
+    
+}
+
+
+#pic
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#pic img
+{
+    width:400px;
+    height: 500px;
+    align-items: justify;
+    padding-left:10%;
+    
+   
+}
+#intro
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    justify-content: space-around;
+}
+
+#intro h2
+{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    flex-wrap: wrap;
+}
+.box1
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding:50px;
+    border-radius:20px ;
+    background: linear-gradient(to top, lightpink 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s; 
+    
+}
+.box1:hover
+{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px lightpink;
+}
+
+
+/* portfolio section*/
+#Portfolio
+{
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    
+   
+}
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+.gallery img
+{
+    width: 360px;
+    height: 260px;
+    margin: 10px;
+    border-radius: 30px;
+    
+}
+.gallery :hover
+{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px lightpink;
+}
+
+/* Work sections */
+#Work
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    box-sizing: border-box; 
+   justify-content: space-around;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius:15px ;
+    background: linear-gradient(to top, lightpink 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+   
+
+}
+.box:hover
+{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px lightpink;
+}
+.box img
+{
+    height: 350px;
+    background-position: left 20px;
+
+}
+
+
+
+
+/* Contact Sections*/
+#Contact
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    background-color: black;
+
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    border-radius: 20px;
+
+}
+
+.input
+{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.input:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 10px white ;
+}
+#msg
+{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+#msg:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 10px white ;
+}
+#send
+{
+    width: 10%;
+    padding: 10px;
+    margin: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+#send:hover
+{
+    cursor: pointer;
+    box-shadow: 0 0 10px white ;
+}
+.footer
+{
+
+text-align: center;
+}
